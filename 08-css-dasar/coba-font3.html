@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coba Font Styling</title>
+    <style>
+      @font-face {
+        font-family: Lobster;
+        src: url(fonts/LobsterTwo-Regular.ttf) format(truetype);
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      p {
+        /* font-style: italic;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 30px;
+        font-family: Lobster, sans-serif; */
+
+        font:
+          italic normal 18px/30px Lobster,
+          arial,
+          sans-serif;
+        /* Menggunakan font shorthand */
+        color: navy;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ipsa
+      iusto officiis excepturi voluptatum, nihil itaque, nobis nemo sunt libero
+      ratione dolor eaque quidem perspiciatis a earum velit laudantium tempore
+      inventore, possimus error laboriosam minus? Aut ipsam pariatur aperiam
+      quibusdam sunt totam, praesentium deserunt quae earum, consequatur
+      provident, dicta illum!
+    </p>
+  </body>
+</html>
