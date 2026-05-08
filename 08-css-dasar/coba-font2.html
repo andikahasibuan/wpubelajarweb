@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coba CSS - Font Styling</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&family=Supermercado+One&display=swap");
+
+      @font-face {
+        font-family: Lobster;
+        src: url("fonts/LobsterTwo-Regular.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      h1 {
+        color: crimson;
+        font-size: 60px;
+        text-align: center;
+        font-family: "Times New Roman", serif;
+      }
+
+      p {
+        color: navy;
+        text-align: center;
+        font-size: 30px;
+        font-family: "Supermercado One", sans-serif;
+      }
+
+      .font-smoochsans {
+        font-family: "Smooch Sans", sans-serif;
+        font-weight: 900;
+      }
+
+      .font-lobster {
+        font-family: Lobster, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+      deleniti quasi aliquam laboriosam ipsam fuga optio incidunt eligendi eum
+      eaque.
+    </p>
+    <p class="font-smoochsans">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. In deleniti
+      asperiores deserunt doloremque velit dolorum fuga ullam quam, et aut.
+    </p>
+    <p class="font-lobster">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam amet
+      consequuntur ad illum fugiat est distinctio, deserunt a vero quaerat.
+    </p>
+  </body>
+</html>
