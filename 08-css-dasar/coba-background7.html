@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiple Background</title>
+    <style>
+      body {
+        background-color: lightblue;
+        font-family: Arial, Helvetica, sans-serif;
+        min-height: 100vh;
+      }
+
+      .frame {
+        height: 300px;
+        width: 300px;
+        background-color: white;
+        border-radius: 50%;
+        margin: auto;
+        background-image: url(images/images1.png), url(images/gambar1.png);
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-size: 150px, 100px;
+        background-position:
+          bottom,
+          top center;
+        border: 3px solid rgb(0, 0, 0);
+      }
+
+      h1 {
+        text-align: center;
+        text-shadow: -2px 2px 2px grey;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My Profile Card</h1>
+    <div class="frame"></div>
+  </body>
+</html>
