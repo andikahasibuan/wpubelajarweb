@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coba Box Model</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    .bar {
+      float: right;
+    }
+    a {
+      display: inline-block;
+      width: 70px;
+      height: 20px;
+      border-radius: 15px;
+      background-color: lightblue;
+      padding: 10px;
+      margin: 20px;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    body {
+      background-color: beige;
+      color: red;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 20px;
+    }
+
+    .container {
+      display: flex;
+    }
+    .kotak,
+    .kotak2 {
+      background-color: lightblue;
+      max-width: 300px;
+      border: 2px solid gray;
+      padding: 20px 12px 20px 12px;
+      margin: 100px 15px 30px 15px;
+      border-left: 14px solid rgb(70, 116, 147);
+      border-radius: 20px;
+      height: 170px;
+      overflow: auto;
+    }
+
+    :has(.kotak, .kotak2) p {
+      color: black;
+    }
+
+    .kotak span.highlight {
+      background-color: salmon;
+    }
+
+    :has(.kotak, .kotak2) h2 {
+      color: brown;
+      margin-bottom: 12px;
+    }
+  </style>
+  <body>
+    <h1>Coba Box Model</h1>
+
+    <div class="bar">
+      <a href="#">Home</a>
+      <a href="#">About Me</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="container">
+      <div class="kotak">
+        <h2>Ini adalah Judul Artikel</h2>
+        <p>
+          Div adalah elemen <strong>block</strong>. Lihat bagaimana kotak
+          abu-abu ini membungkus seluruh konten artikel. Di dalam paragraf ini,
+          kita akan menggunakan span untuk memberi
+          <span class="highlight">style</span>
+          pada kata-kata tertentu.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+          eligendi harum eos unde rem. Praesentium, similique, modi consectetur
+          eveniet eum, quisquam minus voluptates quasi minima consequatur a
+          consequuntur veniam quaerat facilis ab provident fuga voluptas aliquam
+          eos. Tempore, dolor illo?
+        </p>
+      </div>
+      <div class="kotak2">
+        <h2>Judul sementara</h2>
+        <p>
+          Div adalah elemen <strong>block</strong>. Lihat bagaimana kotak
+          abu-abu ini membungkus seluruh konten artikel. Di dalam paragraf ini,
+          kita akan menggunakan span untuk memberi
+          <span class="highlight">style</span>
+          pada kata-kata tertentu.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+          magnam, fuga sunt obcaecati saepe velit repellat tenetur repellendus
+          nesciunt consequatur vitae impedit molestias tempore quas voluptate
+          maxime nisi quae quos iste! Architecto, ratione magni. Illo incidunt
+          veritatis impedit et cupiditate.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
