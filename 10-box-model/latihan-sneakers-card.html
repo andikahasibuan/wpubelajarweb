@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sneakers chard</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: lightblue;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .product-card {
+      border: 1px solid grey;
+      background-color: white;
+      border-radius: 16px;
+      width: 300px;
+      margin: 80px auto;
+      padding: 13px;
+      box-shadow: 0 10px 10px black;
+    }
+
+    .product-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .product-category {
+      margin-top: 12px;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: green;
+      font-size: 13px;
+      letter-spacing: 2px;
+    }
+
+    .product-title {
+      margin-top: 12px;
+      margin-bottom: 12px;
+      font-size: 23px;
+    }
+
+    .product-description {
+      color: grey;
+    }
+
+    .price {
+      margin: 12px auto;
+    }
+
+    span {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .original-price {
+      color: grey;
+      text-decoration: line-through;
+    }
+
+    .size-option-wrapper {
+      border: none;
+    }
+
+    .size-label-text {
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .size-option {
+      margin-bottom: 25px;
+    }
+
+    .size-option input[type="radio"] {
+      display: none;
+    }
+
+    .size-option label {
+      display: inline-block;
+      border: 2px solid #000;
+      width: 44px;
+      height: 44px;
+      text-align: center;
+      line-height: 44px;
+      margin-right: 5px;
+      cursor: pointer;
+      border-radius: 12px;
+      transition: 0.3s ease;
+    }
+
+    .size-option input[type="radio"]:checked + label {
+      background-color: #000;
+      border-color: #000;
+      color: white;
+    }
+
+    .buy-button {
+      margin-bottom: 15px;
+      width: 100%;
+      padding: 15px;
+      background-color: #000;
+      color: white;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .buy-button:hover {
+      background-color: #333;
+    }
+  </style>
+  <body>
+    <article class="product-card">
+      <figure class="product-image">
+        <img src="images/sneakers.png" alt="Sneakers Product" />
+      </figure>
+
+      <p class="product-category">Nike Sportswear</p>
+      <h3 class="product-title">Air Max Essential</h3>
+
+      <p class="product-description">
+        Nike Air Max Essential adalah sepatu yang dibuat dengan desain yang
+        minimalis namun tetap menampilkan ciri khas Nike Air Max.
+      </p>
+
+      <div class="price">
+        <span>IDR 1,899,000</span>
+        <del class="original-price">IDR 2,299,000</del>
+      </div>
+
+      <form action="">
+        <fieldset class="size-option-wrapper">
+          <legend class="size-label-text">Pilih Ukuran (US):</legend>
+
+          <div class="size-option">
+            <input type="radio" name="size" id="s8" value="8" />
+            <label for="s8">8</label>
+            <input type="radio" name="size" id="s9" value="9" />
+            <label for="s9">9</label>
+            <input type="radio" name="size" id="s10" value="10" />
+            <label for="s10">10</label>
+            <input type="radio" name="size" id="s11" value="11" />
+            <label for="s11">11</label>
+            <input type="radio" name="size" id="s12" value="12" />
+            <label for="s12">12</label>
+          </div>
+        </fieldset>
+        <button class="buy-button" type="submit">Tambahkan ke Keranjang</button>
+      </form>
+    </article>
+  </body>
+</html>
