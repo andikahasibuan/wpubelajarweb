@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #1e1e1e;
+}
+
+body {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+
+header .genre-tags {
+  margin-top: 10px;
+}
+
+header .genre-tags .tag {
+  display: inline-block;
+  background-color: #06b6b4;
+  padding: 6px 16px;
+  margin: 0 5px;
+  border-radius: 20px;
+  font-size: 0.9em;
+}
+
+main {
+  width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+main .profile-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 40px;
+  margin: 30px 0;
+  box-shadow: 0 2px 8px rgb(0 0 0/ 0.1);
+  text-align: center;
+}
+
+main .profile-card .artist-image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 4px solid #06b6b4;
+  line-height: 1.6em;
+  margin-bottom: 20px;
+}
+
+main .profile-card .bio p {
+  margin-bottom: 20px;
+}
+
+main .profile-card .bio .stats {
+  margin-top: 20px;
+}
+
+main .profile-card .bio .stats .stats-item {
+  display: inline-block;
+  width: 150px;
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 10px 20px;
+  border: 2px solid #06b6b4;
+}
+
+main .profile-card .bio .stats .stats-item strong {
+  font-size: 2em;
+  font-weight: bold;
+  color: #06b6b4;
+}
+main .profile-card .bio .stats .stats-item p {
+  font-size: 0.9em;
+  color: #666;
+}
+
+main .discograpy {
+  margin-bottom: 30px;
+}
+
+main .discograpy h2,
+main .social-links h2 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: normal;
+  margin: 20px;
+}
+
+main .discograpy .album-list {
+  text-align: center;
+}
+
+main .discograpy .album-list .album-card {
+  display: inline-block;
+  width: 200px;
+  margin: 15px;
+  padding: 15px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgb(0 0 0/ 0.1);
+  border-radius: 12px;
+}
+
+main .discograpy .album-list .album-card img {
+  width: 150px;
+  height: 150px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+main .discograpy .album-list .album-card h3 {
+  font-size: 1.1em;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+main .discograpy .album-list .album-card p {
+  margin-bottom: 20px;
+  color: #666;
+  font-size: 0.8em;
+}
+
+main .discograpy .album-list .album-card .btn-listen {
+  display: inline-block;
+  background-color: #06b6b4;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  text-decoration-line: none;
+  font-size: 0.8em;
+}
+
+main .discograpy .album-list .album-card .btn-listen:hover {
+  background-color: #0cd7d4;
+}
+
+main .social-links {
+  background-color: #f9f8f8;
+  padding: 20px 40px;
+  margin: 10px 25px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+main .social-links .social-btn {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  margin-bottom: 20px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9;
+}
+
+main .social-links .social-btn:hover {
+  background-color: rgb(51, 50, 50);
+}
+
+footer {
+  background-color: #1e1e1e;
+  padding: 20px 15px;
+  margin-top: 12px;
+  text-align: center;
+  color: white;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #0cd7d4;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
